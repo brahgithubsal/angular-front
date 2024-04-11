@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: angular-k8s-deployment
-          image: 192.168.58.2:5000/angular
-          imagePullPolicy: Never
+          image: azizbk9/angular-image
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
 ---
